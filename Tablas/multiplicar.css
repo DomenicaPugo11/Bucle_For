@@ -5,43 +5,49 @@
 
 body {
     margin: 0;
-    padding: 20px;
+    padding: 25px 15px;
     font-family: Arial, sans-serif;
-    background-color: #eaf2f8;
+    background: linear-gradient(135deg, #fce4ec, #e8eaf6, #e0f7fa);
+    min-height: 100vh;
 }
 
 .contenedor {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    padding: 25px;
-    background-color: white;
-    border-radius: 15px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 4px 12px #bdc3c7;
+    box-shadow: 0 8px 25px rgba(126, 87, 194, 0.20);
+    border: 2px solid #e1bee7;
 }
 
 .boton {
     display: block;
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin-bottom: 25px;
-    background-color: #2471a3;
+    background: linear-gradient(90deg, #ab47bc, #7e57c2);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 18px;
     font-weight: bold;
+    letter-spacing: 2px;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(126, 87, 194, 0.25);
 }
 
 .boton:hover {
-    background-color: #154360;
+    background: linear-gradient(90deg, #8e24aa, #5e35b1);
 }
 
 h1 {
-    color: #1a5276;
-    font-size: 26px;
+    color: #7b1fa2;
+    font-size: 27px;
+    line-height: 1.3;
+    margin-bottom: 25px;
 }
 
 .tabla {
@@ -49,32 +55,64 @@ h1 {
 }
 
 .tabla p {
-    padding: 10px;
-    margin: 8px 0;
-    background-color: #d6eaf8;
-    border-radius: 6px;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #f3e5f5;
+    border: 1px solid #e1bee7;
+    border-left: 6px solid #ab47bc;
+    border-radius: 10px;
     font-size: 18px;
-    color: #154360;
+    font-weight: bold;
+    color: #6a1b9a;
+    transition: background-color 0.3s;
 }
 
+.tabla p:nth-child(even) {
+    background-color: #e3f2fd;
+    border-color: #bbdefb;
+    border-left-color: #42a5f5;
+    color: #1565c0;
+}
+
+.tabla p:hover {
+    background-color: #fce4ec;
+}
+
+/* Diseño para celulares */
 @media screen and (max-width: 480px) {
     body {
-        padding: 10px;
+        padding: 12px 8px;
     }
 
     .contenedor {
-        padding: 15px;
+        padding: 18px;
+        border-radius: 15px;
     }
 
     h1 {
         font-size: 22px;
     }
 
-    .tabla p {
+    .boton {
+        padding: 12px;
         font-size: 16px;
     }
 
-    .boton {
+    .tabla p {
+        padding: 10px;
+        margin: 8px 0;
         font-size: 16px;
+    }
+}
+
+/* Diseño para tabletas */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .contenedor {
+        max-width: 550px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
     }
 }
