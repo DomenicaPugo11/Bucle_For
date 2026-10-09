@@ -116,3 +116,30 @@ h1 {
         font-size: 25px;
     }
 }
+
+/* Imagen al pie de la página */
+.pie-pagina {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pie-pagina img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+/* Adaptación para celulares */
+@media screen and (max-width: 480px) {
+    .pie-pagina {
+        margin-top: 20px;
+    }
+
+    .pie-pagina img {
+        max-width: 100%;
+    }
+}
