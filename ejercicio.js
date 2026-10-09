@@ -5,16 +5,19 @@ function listarNumeros(){
 }
 
 function ejecutar(numEjercicio){
-    if (numEjercicio==1){
-        listarNumeros();
-    }else if(numEjercicio==2){
-        listarNumReversa();
-    }else if (numEjercicio==3){
-        listarPares();
-    }else if (numEjercicio==4){
-        listarImpares();
+    switch(numEjercicio){
+        case 1:listarNumeros();
+            break;
+        case 2: listarNumReversa();
+            break;
+        case 3: listarPares();
+            break;
+        case 4:listarImpares();
+            break;
     }
 }
+        
+
 
 function listarNumReversa(){
     for (let i=3;i>0;i--){
